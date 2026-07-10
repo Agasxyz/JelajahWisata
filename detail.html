@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Wisata - Jelajah Wisata Indonesia</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-compass logo-icon"></i>
+                <span>Jelajah Wisata</span>
+            </a>
+
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation" id="mobile-toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="nav-item" id="nav-home">Beranda</a></li>
+                <li><a href="explore.html" class="nav-item" id="nav-explore">Daftar Wisata</a></li>
+                <li><a href="favorites.html" class="nav-item" id="nav-favorites">Favorit Saya</a></li>
+                <li><a href="tentang.html" class="nav-item" id="nav-tentang">Tentang Kami</a></li>
+                <li><a href="explore.html" class="nav-item nav-cta" id="nav-cta">Jelajah Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="app">
+
+
+        <div id="detail-1" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/borobudur.jpg" id="main-detail-img-1" alt="Candi Borobudur">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-1', 'tab-deskripsi-1', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-1', 'tab-itinerary-1', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-1">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Candi Borobudur</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Magelang, Jawa Tengah</span>
+                                    <span><i class="fa-solid fa-tag"></i> Budaya</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-10</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Candi Borobudur adalah candi Buddha terbesar di dunia yang dibangun pada abad ke-8.
+                                Sebagai salah satu warisan budaya dunia, kawasan ini menawarkan keindahan arsitektur
+                                kuno dan pemandangan pegunungan yang asri. Pihak pengelola bersama masyarakat setempat
+                                senantiasa merawat kebersihan dan kelestarian area candi agar keindahan warisan leluhur
+                                ini tetap terjaga secara berkelanjutan.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-1" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Kedatangan & Bersepeda Desa</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Tiba di
+                                        penginapan/homestay sekitar Borobudur. Sore hari bersepeda santai melintasi
+                                        areal persawahan dan singgah di sentra pembuatan tahu lokal.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Sunrise Punthuk & Eksplorasi
+                                        Candi</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Menyaksikan panorama
+                                        matahari terbit berlatar Borobudur di Punthuk Setumbu. Lanjut menaiki struktur
+                                        candi didampingi local guide berlisensi.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Sentra Kerajinan & Kepulangan
+                                    </h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Berkunjung ke galeri
+                                        kerajinan gerabah Karanganyar untuk cinderamata. Check-out dari homestay dan
+                                        transfer kembali ke titik kepulangan.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-1"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 4.0 / 5.0 (1 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-1" style="margin-bottom:24px;">
+                                <div class="review-item" style="border-bottom:1px solid #E0EAE3; padding:12px 16px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                        <strong>Dewi Lestari</strong>
+                                        <span style="color:#EE9B00;"><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                                    </div>
+                                    <p style="font-size:14px; color:#2D3E35;">Cagar budaya yang sangat megah dan terawat
+                                        dengan bersih.</p>
+                                </div>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(1, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-1">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-1')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-1')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-1')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-2" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/bromo.jpg" id="main-detail-img-2" alt="Gunung Bromo">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-2', 'tab-deskripsi-2', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-2', 'tab-itinerary-2', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-2">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Gunung Bromo</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Probolinggo, Jawa Timur</span>
+                                    <span><i class="fa-solid fa-tag"></i> Alam</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-12</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Gunung Bromo terkenal dengan keindahan kawah aktif, hamparan lautan pasir luas, serta
+                                pemandangan matahari terbit yang memukau. Kunjungan ke Bromo dikelola bersama oleh warga
+                                lokal Tengger, termasuk persewaan jip dan pemandu wisata tradisional, guna mendukung
+                                ekonomi masyarakat setempat sekaligus menjaga kebersihan kawasan taman nasional.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-2" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Kedatangan di Cemoro Lawang</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Tiba di penginapan
+                                        lereng Bromo. Berjalan santai menikmati pemandangan kabut sore hari di bibir
+                                        kaldera Bromo.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Sunrise Penanjakan & Kawah Bromo
+                                    </h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Pukul 03.00 pagi naik
+                                        jip lokal menuju Penanjakan 1. Turun melintasi laut pasir, berjalan kaki menuju
+                                        puncak tangga kawah aktif.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Bukit Teletubbies & Kepulangan
+                                    </h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengunjungi padang
+                                        sabana hijau Bukit Teletubbies and Pasir Berbisik. Check-out hotel dan kembali
+                                        ke Malang/Surabaya.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-2"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (0 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-2" style="margin-bottom:24px;">
+                                <p style="color:#586E60; text-align:center; padding: 20px;">Belum ada ulasan dari
+                                    pengunjung. Jadilah yang pertama!</p>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(2, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-2">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-2')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-2')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-2')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-3" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/nusapenida.jpg" id="main-detail-img-3" alt="Nusa Penida">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-3', 'tab-deskripsi-3', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-3', 'tab-itinerary-3', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-3">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Nusa Penida</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Klungkung, Bali</span>
+                                    <span><i class="fa-solid fa-tag"></i> Alam</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-15</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Nusa Penida menyajikan pesona tebing laut yang megah dan pantai berpasir putih bersih
+                                seperti Pantai Kelingking dan Broken Beach. Destinasi ini dikembangkan dengan
+                                mengutamakan pelestarian alam pesisir dan keterlibatan akomodasi homestay lokal guna
+                                memastikan manfaat pariwisata dirasakan langsung oleh masyarakat pulau.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-3" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Penyeberangan Sanur & Tebing
+                                        Kelingking</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Naik speed boat dari
+                                        Sanur ke Nusa Penida. Sore hari mengunjungi bukit karang berbentuk dinosaurus di
+                                        Pantai Kelingking.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Broken Beach, Angel's Billabong &
+                                        Crystal Bay</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Menjelajahi keajaiban
+                                        karang bolong Broken Beach, berenang di kolam alami Angel's Billabong, dan
+                                        relaksasi sunset di Crystal Bay.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Bukit Teletubbies & Kembali ke
+                                        Sanur</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Melihat bukit-bukit
+                                        kapur hijau unik Bukit Teletubbies. Lanjut ke pelabuhan penyeberangan kembali ke
+                                        pulau utama Bali.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-3"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (0 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-3" style="margin-bottom:24px;">
+                                <p style="color:#586E60; text-align:center; padding: 20px;">Belum ada ulasan dari
+                                    pengunjung. Jadilah yang pertama!</p>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(3, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-3">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-3')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-3')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-3')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-4" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/pinkbeach.jpeg" id="main-detail-img-4" alt="Pink Beach">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-4', 'tab-deskripsi-4', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-4', 'tab-itinerary-4', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-4">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Pink Beach</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Manggarai Barat, NTT</span>
+                                    <span><i class="fa-solid fa-tag"></i> Alam</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-18</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Pink Beach merupakan pantai unik dengan pasir berwarna merah muda lembut yang berasal
+                                dari serpihan karang merah organik. Terletak di kawasan Taman Nasional Komodo, pantai
+                                ini dilindungi ketat dari sampah plastik dan kerusakan terumbu karang tepi agar keaslian
+                                alaminya tetap terjaga selamanya.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-4" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Labuan Bajo & Berlayar</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Tiba di bandara Labuan
+                                        Bajo, transfer ke kapal phinisi sewa lokal. Bermalam di kapal (live on board).
+                                    </p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Snorkeling di Pink Beach</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mendarat di Pink Beach,
+                                        berenang santai di pantai pasir pink dan melakukan snorkeling ramah lingkungan
+                                        untuk menikmati terumbu karang.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Pulau Padar & Kepulangan</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Treking pagi ke view
+                                        point Pulau Padar. Kembali berlayar ke Labuan Bajo untuk penerbangan pulang.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-4"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (0 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-4" style="margin-bottom:24px;">
+                                <p style="color:#586E60; text-align:center; padding: 20px;">Belum ada ulasan dari
+                                    pengunjung. Jadilah yang pertama!</p>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(4, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-4">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-4')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-4')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-4')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-5" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/prambanan.jpg" id="main-detail-img-5" alt="Candi Prambanan">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-5', 'tab-deskripsi-5', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-5', 'tab-itinerary-5', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-5">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Candi Prambanan</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Sleman, Yogyakarta</span>
+                                    <span><i class="fa-solid fa-tag"></i> Budaya</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-20</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia yang memiliki
+                                arsitektur ramping dan tinggi yang megah. Selain pelestarian batu candi bersejarah,
+                                Prambanan menyajikan pagelaran seni tradisional Ramayana yang melibatkan ratusan seniman
+                                lokal guna melestarikan adat seni pertunjukan daerah.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-5" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Kedatangan di Jogja & Malioboro
+                                    </h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Tiba di Yogyakarta,
+                                        check-in penginapan. Malam hari berjalan kaki di sepanjang kawasan Malioboro dan
+                                        mencicipi gudeg tradisional.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Candi Prambanan & Sendratari
+                                        Ramayana</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengunjungi kompleks
+                                        candi utama di siang hari. Malam hari menonton sendratari Ramayana kolosal di
+                                        panggung terbuka Candi Prambanan.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Wisata Belanja & Kepulangan</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Berbelanja kaos oblong
+                                        khas dan jajanan bakpia di sentra oleh-oleh. Menuju stasiun Tugu untuk
+                                        perjalanan kembali.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-5"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (0 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-5" style="margin-bottom:24px;">
+                                <p style="color:#586E60; text-align:center; padding: 20px;">Belum ada ulasan dari
+                                    pengunjung. Jadilah yang pertama!</p>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(5, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-5">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-5')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-5')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-5')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-6" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/pulaukomodo.jpg" id="main-detail-img-6" alt="Pulau Komodo">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-6', 'tab-deskripsi-6', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-6', 'tab-itinerary-6', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-6">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Pulau Komodo</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Manggarai Barat, NTT</span>
+                                    <span><i class="fa-solid fa-tag"></i> Alam</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-22</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Pulau Komodo adalah habitat alami dari kadal raksasa purba Komodo yang dilindungi dunia.
+                                Pihak pengelola bersama para ranger lokal menjaga ketat kelestarian hutan sabana dan
+                                populasi rusa sebagai ekosistem pendukung hidup komodo, membatasi rute trekking untuk
+                                meminimalisir dampak pariwisata.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-6" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Tiba di Labuan Bajo</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Penjemputan di bandara
+                                        Labuan Bajo, check-in hotel/homestay pesisir Labuan Bajo. Makan malam kuliner
+                                        ikan bakar Kampung Ujung.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Trekking Pulau Rinca/Komodo &
+                                        Ranger Tour</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Naik speed boat menuju
+                                        Pulau Komodo. Melakukan trekking dengan pengawalan ranger lokal untuk melihat
+                                        aktivitas komodo.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Gua Batu Cermin & Kepulangan</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengunjungi situs fosil
+                                        karang purba Gua Batu Cermin di Labuan Bajo. Check-out hotel dan kembali ke
+                                        bandara.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-6"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (0 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-6" style="margin-bottom:24px;">
+                                <p style="color:#586E60; text-align:center; padding: 20px;">Belum ada ulasan dari
+                                    pengunjung. Jadilah yang pertama!</p>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(6, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-6">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-6')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-6')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-6')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-7" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/rajaampat.jpeg" id="main-detail-img-7" alt="Raja Ampat">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-7', 'tab-deskripsi-7', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-7', 'tab-itinerary-7', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-7">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Raja Ampat</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Raja Ampat, Papua Barat Daya</span>
+                                    <span><i class="fa-solid fa-tag"></i> Alam</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-25</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Raja Ampat adalah surga penyelaman dunia yang memiliki keanekaragaman terumbu karang
+                                tertinggi. Wilayah kepulauan karst ini dijaga dengan sistem kearifan lokal masyarakat
+                                adat untuk mencegah eksploitasi laut berlebih, serta didukung homestay tradisional
+                                terapung milik keluarga setempat.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-7" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Sorong ke Waisai</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Naik kapal feri cepat
+                                        dari Sorong ke pulau Waisai. Check-in homestay terapung lokal di Arborek.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Piaynemo Viewpoint & Diving</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Naik tangga kayu ke
+                                        bukit Piaynemo untuk melihat gugusan pulau karst ikonik. Lanjut snorkeling di
+                                        sekitar desa wisata Sawinggrai.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Pengamatan Burung Cendrawasih
+                                    </h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Treking subuh untuk
+                                        melihat burung Cendrawasih menari di hutan Waisai. Check-out dan kembali ke
+                                        Sorong.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-7"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (1 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-7" style="margin-bottom:24px;">
+                                <div class="review-item" style="border-bottom:1px solid #E0EAE3; padding:12px 16px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                        <strong>Sarah Green</strong>
+                                        <span style="color:#EE9B00;"><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <p style="font-size:14px; color:#2D3E35;">Beautiful coral reefs and friendly hosts.
+                                        A truly wonderful experience!</p>
+                                </div>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(7, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-7">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-7')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-7')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-7')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-8" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/uluwatu.jpg" id="main-detail-img-8" alt="Pura Luhur Uluwatu">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-8', 'tab-deskripsi-8', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-8', 'tab-itinerary-8', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-8">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Pura Luhur Uluwatu</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Badung, Bali</span>
+                                    <span><i class="fa-solid fa-tag"></i> Budaya</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-28</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Pura Luhur Uluwatu berdiri di ujung tebing tinggi yang menjorok ke samudra luas. Di
+                                sekeliling pura terdapat kawasan hutan kecil yang dihuni oleh kera ekor panjang yang
+                                dijaga kelestariannya. Pura ini juga menyajikan pertunjukan Tari Kecak khas Bali dengan
+                                latar belakang matahari terbenam yang indah.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-8" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Kedatangan di Kuta & Pantai
+                                        Melasti</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Tiba di bandara I Gusti
+                                        Ngurah Rai. Check-in akomodasi, lanjut menikmati pasir putih Pantai Melasti sore
+                                        hari.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Pura Uluwatu, Kera Hutan & Tari
+                                        Kecak</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengunjungi tebing Pura
+                                        Uluwatu, berfoto aman di dekat kera penunggu hutan lindung. Pukul 18.00 menonton
+                                        pertunjukan Kecak Sunset.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Pantai Pandawa & Kepulangan</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengunjungi patung lima
+                                        Pandawa di tebing pantai Pandawa. Makan siang ikan bakar Jimbaran sebelum
+                                        terbang pulang.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-8"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (0 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-8" style="margin-bottom:24px;">
+                                <p style="color:#586E60; text-align:center; padding: 20px;">Belum ada ulasan dari
+                                    pengunjung. Jadilah yang pertama!</p>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(8, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-8">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-8')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-8')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-8')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detail-9" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar
+                    Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/waerebo.jpeg" id="main-detail-img-9" alt="Kampung Adat Wae Rebo">
+                        </div>
+                        
+                        <div class="detail-tabs-selector"
+                            style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active"
+                                onclick="switchTab('detail-9', 'tab-deskripsi-9', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn"
+                                onclick="switchTab('detail-9', 'tab-itinerary-9', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-9">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Kampung Adat Wae Rebo</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Manggarai, NTT</span>
+                                    <span><i class="fa-solid fa-tag"></i> Desa Adat</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-05-30</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Wae Rebo adalah desa adat tradisional di pegunungan terpencil Flores yang memiliki 7
+                                rumah adat kerucut Mbaru Niang. Wisatawan diajak berinteraksi langsung dengan kehidupan
+                                warga, mencicipi kopi khas pegunungan, dan tinggal bersama di rumah adat guna
+                                melestarikan adat istiadat leluhur.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-9" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3
+                                Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline"
+                                style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Labuan Bajo ke Denge</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Perjalanan darat 4-5 jam
+                                        dari Labuan Bajo menuju desa Denge. Bermalam di homestay sederhana di kaki bukit
+                                        Denge.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Trekking & Menginap di Mbaru
+                                        Niang</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Melakukan trekking 3 jam
+                                        mendaki bukit Wae Rebo. Diterima upacara Waelu oleh tetua adat, tinggal semalam
+                                        di dalam rumah adat kerucut.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div
+                                        style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;">
+                                    </div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Turun Gunung & Kembali ke Bajo
+                                    </h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Membeli kopi khas Wae
+                                        Rebo yang dipetik langsung oleh warga. Turun kembali ke Denge dan transfer darat
+                                        ke Labuan Bajo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="reviews-section"
+                            style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-9"
+                                    style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (1 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-9" style="margin-bottom:24px;">
+                                <div class="review-item" style="border-bottom:1px solid #E0EAE3; padding:12px 16px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                        <strong>Gede Adtha</strong>
+                                        <span style="color:#EE9B00;"><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <p style="font-size:14px; color:#2D3E35;">Sangat mengagumi kearifan lokal warga Wae
+                                        Rebo. Suasananya sejuk dan ramah sekali.</p>
+                                </div>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(9, event)"
+                                style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input"
+                                        style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row"
+                                    style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda"
+                                        style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan"
+                                    style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;"
+                                    required></textarea>
+                                <button type="submit" class="btn-submit"
+                                    style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-9">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator
+                                Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-9')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-9')"
+                                    min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-9')"
+                                    style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div
+                                    style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-10" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/penglipuran.png" id="main-detail-img-10" alt="Desa Adat Penglipuran">
+                        </div>
+                        
+                        <div class="detail-tabs-selector" style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active" onclick="switchTab('detail-10', 'tab-deskripsi-10', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn" onclick="switchTab('detail-10', 'tab-itinerary-10', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-10">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Desa Adat Penglipuran</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Bangli, Bali</span>
+                                    <span><i class="fa-solid fa-tag"></i> Desa Adat</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-06-02</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Desa Adat Penglipuran adalah salah satu desa wisata terpopuler di Bali yang dikenal di tingkat dunia karena kebersihan dan keasrian lingkungannya. Desa ini mempertahankan tata ruang adat tradisional Bali yang harmonis bernama Tri Hita Karana. Setiap pekarangan rumah memiliki pintu gerbang (angkul-angkul) khas Bali yang seragam dari anyaman bambu. Pengunjung dapat menyusuri jalanan batu desa tanpa kendaraan bermotor, berinteraksi dengan warga lokal, dan menikmati atmosfer budaya Bali kuno yang damai.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-10" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (1 Hari)</h2>
+                            <div class="itinerary-timeline" style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Pagi: Jelajahi Area Pemukiman & Hutan Bambu</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Menyusuri jalur utama desa, melihat arsitektur gerbang bambu tradisional yang seragam, dan mengunjungi hutan bambu suci yang rindang di hulu desa.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Siang: Belajar Kerajinan Bambu & Mencicipi Loloh Cemcem</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Menikmati minuman herba tradisional Loloh Cemcem khas desa, serta ikut serta belajar teknik menganyam bambu bersama warga setempat.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-section" style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-10" style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (1 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-10" style="margin-bottom:24px;">
+                                <div class="review-item" style="border-bottom:1px solid #E0EAE3; padding:12px 16px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                        <strong>Ketut Widi</strong>
+                                        <span style="color:#EE9B00;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <p style="font-size:14px; color:#2D3E35;">Desanya sangat bersih dan asri sekali! Warga lokal sangat menyambut hangat setiap wisatawan. Hutan bambu di belakang desa sangat menenangkan.</p>
+                                </div>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(10, event)" style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input" style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name" style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda" style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan" style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;" required></textarea>
+                                <button type="submit" class="btn-submit" style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-10">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-10')" style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-10')" min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-10')" style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-11" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/toraja.png" id="main-detail-img-11" alt="Tana Toraja">
+                        </div>
+                        
+                        <div class="detail-tabs-selector" style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active" onclick="switchTab('detail-11', 'tab-deskripsi-11', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn" onclick="switchTab('detail-11', 'tab-itinerary-11', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-11">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Tana Toraja</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Tana Toraja, Sulawesi Selatan</span>
+                                    <span><i class="fa-solid fa-tag"></i> Budaya</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-06-03</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Tana Toraja adalah kawasan dataran tinggi di Sulawesi Selatan yang sangat termasyhur dengan keunikan budayanya, terutama adat pemakaman kuno. Salah satu tradisi paling terkenal adalah Rambu Solo, sebuah upacara pemakaman adat yang megah dan penuh simbolisme sosial. Wisatawan dapat mengunjungi situs makam goa tebing di Londa, patung kayu tau-tau penanda arwah leluhur, serta deretan rumah adat Tongkonan dengan atap melengkung menyerupai perahu yang dihiasi tanduk kerbau sebagai lambang status sosial keluarga.
+                            </div>
+                        </div>
+                        <div class="detail-tab-content" id="tab-itinerary-11" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (3 Hari 2 Malam)</h2>
+                            <div class="itinerary-timeline" style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 1: Kunjungan Kete Kesu</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengunjungi desa adat Kete Kesu untuk mengagumi rumah Tongkonan tertua, lumbung padi tradisional, dan ukiran kayu Toraja yang sarat makna.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 2: Goa Makam Londa & Upacara Adat</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Memasuki goa pemakaman alam Londa dengan pemandu membawa obor petromak, serta berkesempatan menyaksikan prosesi upacara Rambu Solo.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Hari 3: Lolai (Negeri di Atas Awan)</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Menikmati kopi Toraja asli berlatar pemandangan hamparan awan putih bergulung di puncak bukit Lolai sebelum kembali ke Makassar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-section" style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-11" style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (1 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-11" style="margin-bottom:24px;">
+                                <div class="review-item" style="border-bottom:1px solid #E0EAE3; padding:12px 16px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                        <strong>Maria R.</strong>
+                                        <span style="color:#EE9B00;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <p style="font-size:14px; color:#2D3E35;">Kebudayaan Toraja sangat kaya dan magis! Upacara adat dan arsitektur Tongkonan sungguh membuat takjub. Kopi Toraja-nya juga luar biasa nikmat.</p>
+                                </div>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(11, event)" style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input" style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name" style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda" style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan" style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;" required></textarea>
+                                <button type="submit" class="btn-submit" style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-11">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-11')" style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-11')" min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-11')" style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-12" class="view-section detail-view-section" style="display:none; padding: 40px 0;">
+            <div class="detail-layout">
+                <a href="explore.html" class="btn-back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar Wisata</a>
+                <div class="detail-grid">
+                    <div class="detail-main">
+                        <div class="detail-img-container">
+                            <img src="asset/sade.jpg" id="main-detail-img-12" alt="Desa Adat Sade">
+                        </div>
+                        
+                        <div class="detail-tabs-selector" style="display:flex; border-bottom:2px solid #E0EAE3; margin-bottom:20px; gap:24px;">
+                            <button class="detail-tab-btn active" onclick="switchTab('detail-12', 'tab-deskripsi-12', this)">Deskripsi Lengkap</button>
+                            <button class="detail-tab-btn" onclick="switchTab('detail-12', 'tab-itinerary-12', this)">Panduan Rencana</button>
+                        </div>
+                        <div class="detail-tab-content active" id="tab-deskripsi-12">
+                            <div class="detail-header" style="margin-bottom: 20px;">
+                                <h1>Desa Adat Sade</h1>
+                                <div class="detail-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Lombok, NTB</span>
+                                    <span><i class="fa-solid fa-tag"></i> Desa Adat</span>
+                                    <span><i class="fa-regular fa-calendar"></i> Terbit: 2026-06-02</span>
+                                </div>
+                            </div>
+                            <div class="detail-description">
+                                Desa Sade adalah salah satu desa adat suku Sasak di Lombok yang masih mempertahankan tradisi, arsitektur rumah tradisional, serta nilai-nilai budaya yang diwariskan secara turun-temurun. Keunikan rumah beratap alang-alang, lantai yang dirawat dengan campuran tanah liat, serta kehidupan masyarakat yang tetap memegang adat menjadikan Desa Sade sebagai destinasi wisata budaya yang ikonik di Nusa Tenggara Barat.
+                            </div>
+                        </div>
+                        
+                        <div class="detail-tab-content" id="tab-itinerary-12" style="display:none;">
+                            <h2 style="font-size:20px; color:#2D6A4F; margin-bottom:16px;">Saran Rencana Kunjungan (1 Hari)</h2>
+                            <div class="itinerary-timeline" style="display:flex; flex-direction:column; gap:20px; position:relative; padding-left:24px; border-left: 2px solid #40916C;">
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Pagi: Menjelajahi Kampung Adat Sade</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Berjalan menyusuri perkampungan adat Suku Sasak, melihat rumah tradisional beratap alang-alang, serta mendengarkan penjelasan mengenai sejarah, budaya, dan kehidupan masyarakat setempat dari pemandu lokal.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Siang: Menyaksikan Tenun Tradisional & Berbelanja Suvenir</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengamati proses pembuatan kain tenun khas Sasak yang dikerjakan secara manual, mencoba menenun, serta membeli kain tenun dan kerajinan tangan sebagai oleh-oleh khas Desa Sade.</p>
+                                </div>
+                                <div class="itinerary-step" style="position:relative;">
+                                    <div style="position:absolute; left:-33px; top:4px; width:16px; height:16px; border-radius:50%; background:#2D6A4F; border:4px solid #FFFFFF;"></div>
+                                    <h4 style="color:#2D6A4F; font-size:16px;">Sore: Berfoto & Menikmati Suasana Desa</h4>
+                                    <p style="font-size:13.5px; color:#586E60; margin-top:4px;">Mengabadikan momen dengan latar rumah adat dan lingkungan desa yang autentik, kemudian menikmati suasana pedesaan yang tenang sebelum melanjutkan perjalanan ke destinasi lain di Lombok.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="reviews-section" style="margin-top:40px; border-top:1px solid #E0EAE3; padding-top:24px;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                                <h3>Ulasan Pengunjung</h3>
+                                <div class="avg-rating-badge" id="avg-badge-12" style="background:#D8F3DC; padding:6px 14px; border-radius:30px; font-weight:700; color:#2D6A4F; font-size:13px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fa-solid fa-star" style="color:#EE9B00;"></i> 5.0 / 5.0 (1 Ulasan)
+                                </div>
+                            </div>
+                            <div class="comments-list" id="comments-list-12" style="margin-bottom:24px;">
+                                <div class="review-item" style="border-bottom:1px solid #E0EAE3; padding:12px 16px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                        <strong>Indah Sekali</strong>
+                                        <span style="color:#EE9B00;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <p style="font-size:14px; color:#2D3E35;">Desa Sade sangat asri dengan budaya Sasak yang masih terjaga. Warga lokal ramah, dan pengalaman melihat rumah adat serta tenun tradisional sangat berkesan.</p>
+                                </div>
+                            </div>
+                            <form class="comment-form" onsubmit="submitLocalComment(12, event)" style="background:#F4F8F5; padding:20px; border-radius:10px;">
+                                <h4 style="margin-bottom:12px;">Tulis Ulasan Anda</h4>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <div class="star-rating-input" style="font-size:18px; color:#EE9B00; cursor:pointer; display:flex; gap:6px;">
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 1)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 2)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 3)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 4)"></i>
+                                        <i class="fa-solid fa-star" onclick="setRatingStar(this, 5)"></i>
+                                    </div>
+                                </div>
+                                <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+                                    <input type="text" placeholder="Nama Anda" class="author-name" style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                    <input type="email" placeholder="Email Anda" style="padding:8px; border:1px solid #E0EAE3; border-radius:4px;" required>
+                                </div>
+                                <textarea class="author-msg" rows="3" placeholder="Isi Ulasan" style="width:100%; padding:8px; border:1px solid #E0EAE3; border-radius:4px; margin-bottom:12px;" required></textarea>
+                                <button type="submit" class="btn-submit" style="padding:10px 20px; font-weight:600;">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="detail-sidebar">
+                        <div class="widget" id="calc-widget-12">
+                            <h3 style="font-size:16px; margin-bottom:14px;">Estimator Anggaran</h3>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Gaya Perjalanan</label>
+                                <select class="calc-class" onchange="calculateLocalBudget('detail-12')" style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="200000" selected>Backpacker (Rp 200rb/hari)</option>
+                                    <option value="600000">Standard (Rp 600rb/hari)</option>
+                                    <option value="2000000">Luxury (Rp 2jt/hari)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom:10px;">
+                                <label style="font-size:12px; color:#586E60;">Durasi Liburan (Hari)</label>
+                                <input type="number" class="calc-duration" oninput="calculateLocalBudget('detail-12')" min="1" max="30" value="3" style="width:100%; padding:6px; font-size:13px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom:14px;">
+                                <label style="font-size:12px; color:#586E60;">Transportasi Utama</label>
+                                <select class="calc-transport" onchange="calculateLocalBudget('detail-12')" style="width:100%; padding:6px; font-size:13px;">
+                                    <option value="0">Transportasi Lokal (Rp 0)</option>
+                                    <option value="300000">Kereta Api (Rp 300rb)</option>
+                                    <option value="500000">Sewa Mobil (Rp 500rb)</option>
+                                    <option value="1200000" selected>Pesawat Terbang (Rp 1.2jt)</option>
+                                </select>
+                            </div>
+                            <div style="border-top:1px dashed #E0EAE3; padding-top:10px; font-size:12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                    <span>Biaya Harian:</span>
+                                    <span class="label-daily-cost">Rp 600.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                    <span>Tiket / Transport:</span>
+                                    <span class="label-trans-cost">Rp 1.200.000</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; font-weight:700; color:#2D6A4F; border-top:1px solid #E0EAE3; padding-top:6px;">
+                                    <span>Total Estimasi:</span>
+                                    <span class="label-total-cost">Rp 1.800.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-about">
+                <div class="footer-brand">
+                    <i class="fa-solid fa-compass footer-logo-icon"></i>
+                    <span class="footer-brand-name">Jelajah Wisata</span>
+                </div>
+                <p class="footer-tagline">Portal informasi destinasi wisata Nusantara. Dari desa adat, alam bebas,
+                    hingga warisan budaya yang penuh makna.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="explore.html">Daftar Wisata</a></li>
+                    <li><a href="favorites.html">Favorit Saya</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="explore.html">Wisata Alam</a></li>
+                    <li><a href="explore.html">Wisata Budaya</a></li>
+                    <li><a href="explore.html">Desa Adat</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jelajah Wisata. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+
+    <div class="toast-container" id="toast-container"></div>
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>

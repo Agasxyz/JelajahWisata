@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Jelajah Wisata Indonesia</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-compass logo-icon"></i>
+                <span>Jelajah Wisata</span>
+            </a>
+
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation" id="mobile-toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="nav-item" id="nav-home">Beranda</a></li>
+                <li><a href="explore.html" class="nav-item" id="nav-explore">Daftar Wisata</a></li>
+                <li><a href="favorites.html" class="nav-item" id="nav-favorites">Favorit Saya</a></li>
+                <li><a href="tentang.html" class="nav-item active" id="nav-tentang">Tentang Kami</a></li>
+                <li><a href="explore.html" class="nav-item nav-cta" id="nav-cta">Jelajah Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="app">
+
+
+        <div class="page-section about-section">
+            <div class="about-container">
+                <h1 class="about-title">Tentang Jelajah Wisata</h1>
+                <div class="about-desc">
+                    Portal informasi wisata yang mengangkat keindahan alam, kearifan lokal, dan kekayaan budaya
+                    Nusantara. Untuk perjalanan yang bermakna dan bertanggung jawab.
+                </div>
+
+                <div class="mv-grid">
+                    <div class="mv-card">
+                        <div class="mv-card-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Misi Kami</h3>
+                        <p>Menyediakan informasi destinasi wisata Indonesia yang akurat, mendalam, dan terinspirasi dari
+                            nilai-nilai pelestarian lingkungan serta pemberdayaan masyarakat lokal. Kami ingin mendorong
+                            gaya hidup perjalanan yang lebih bijak.</p>
+                    </div>
+                    <div class="mv-card accent-card">
+                        <div class="mv-card-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>Visi Kami</h3>
+                        <p>Menjadi portal referensi wisata Nusantara terpercaya yang menginspirasi setiap wisatawan
+                            untuk mengenal, mencintai, dan ikut menjaga kelestarian alam serta keberagaman budaya
+                            Indonesia demi generasi yang akan datang.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-about">
+                <div class="footer-brand">
+                    <i class="fa-solid fa-compass footer-logo-icon"></i>
+                    <span class="footer-brand-name">Jelajah Wisata</span>
+                </div>
+                <p class="footer-tagline">Portal informasi destinasi wisata Nusantara. Dari desa adat, alam bebas,
+                    hingga warisan budaya yang penuh makna.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="explore.html">Daftar Wisata</a></li>
+                    <li><a href="favorites.html">Favorit Saya</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="explore.html">Wisata Alam</a></li>
+                    <li><a href="explore.html">Wisata Budaya</a></li>
+                    <li><a href="explore.html">Desa Adat</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jelajah Wisata. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+
+    <div class="toast-container" id="toast-container"></div>
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>

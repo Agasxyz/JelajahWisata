@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Jelajah Wisata Indonesia</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-compass logo-icon"></i>
+                <span>Jelajah Wisata</span>
+            </a>
+
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation" id="mobile-toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="nav-item active" id="nav-home">Beranda</a></li>
+                <li><a href="explore.html" class="nav-item" id="nav-explore">Daftar Wisata</a></li>
+                <li><a href="favorites.html" class="nav-item" id="nav-favorites">Favorit Saya</a></li>
+                <li><a href="tentang.html" class="nav-item" id="nav-tentang">Tentang Kami</a></li>
+                <li><a href="explore.html" class="nav-item nav-cta" id="nav-cta">Jelajah Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="app">
+
+
+        <div class="hero">
+            <h1>Jelajah Wisata Indonesia</h1>
+            <p>Ribuan pulau, ratusan suku, satu kekayaan. Kenali keunikan budaya lokal dan keajaiban alam Nusantara yang
+                patut dijaga bersama.</p>
+            <form id="hero-search-form" class="hero-search-box">
+                <input type="text" placeholder="Cari destinasi wisata..." id="hero-search-input" required>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Cari</button>
+            </form>
+        </div>
+
+
+        <div class="region-filter-container">
+            <h3 class="region-title">Jelajahi Berdasarkan Wilayah</h3>
+            <div class="region-grid">
+                <div class="region-card" data-region="Sumatera"><i class="fa-solid fa-compass"></i> Sumatera</div>
+                <div class="region-card" data-region="Jawa"><i class="fa-solid fa-compass"></i> Jawa</div>
+                <div class="region-card" data-region="Bali"><i class="fa-solid fa-compass"></i> Bali & Nusa Tenggara
+                </div>
+                <div class="region-card" data-region="Kalimantan"><i class="fa-solid fa-compass"></i> Kalimantan</div>
+                <div class="region-card" data-region="Sulawesi"><i class="fa-solid fa-compass"></i> Sulawesi</div>
+                <div class="region-card" data-region="Papua"><i class="fa-solid fa-compass"></i> Papua</div>
+            </div>
+        </div>
+
+
+        <div class="page-section page-section--muted">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>Mengapa Pelestarian Itu Penting?</h2>
+                    <p>Keindahan Indonesia bukan hanya untuk dinikmati hari ini,ia adalah warisan yang harus tetap hidup
+                        untuk generasi yang akan datang.</p>
+                </div>
+                <div class="info-cards-grid">
+                    <div class="info-card">
+                        <i class="fa-solid fa-leaf info-card-icon"></i>
+                        <h3>Hutan Hujan yang Terancam</h3>
+                        <p>Indonesia memiliki hutan hujan tropis terluas ketiga di dunia. Wisata yang tidak bertanggung
+                            jawab dapat mempercepat kerusakan ekosistem dan hilangnya habitat satwa liar.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-people-group info-card-icon"></i>
+                        <h3>Ekonomi Warga Lokal</h3>
+                        <p>Memilih homestay lokal, pemandu adat, dan produk kerajinan tangan setempat berarti Anda
+                            berkontribusi langsung pada kesejahteraan masyarakat di sekitar destinasi wisata.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-landmark-dome info-card-icon"></i>
+                        <h3>Budaya yang Hampir Punah</h3>
+                        <p>Ratusan tradisi adat, bahasa daerah, dan kesenian lokal Indonesia terancam punah. Setiap
+                            kunjungan ke desa adat adalah bentuk nyata dukungan untuk melestarikannya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-section">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>Rekomendasi Destinasi Terbaik</h2>
+                    <p>Pilihan objek wisata populer dengan pesona alam dan kearifan lokal yang menakjubkan.</p>
+                </div>
+
+                <div class="cards-grid" id="home-featured-grid">
+
+                    <div class="wisata-card" data-id="1" data-cat="Budaya" data-region="Jawa"
+                        data-name="Candi Borobudur">
+                        <div class="card-img-wrapper">
+                            <img src="asset/borobudur.jpg" alt="Candi Borobudur">
+                            <span class="card-badge">Budaya</span>
+                            <button class="card-favorite-btn" onclick="appToggleFavorite(1, event)"
+                                title="Simpan ke Favorit">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-location"><i class="fa-solid fa-location-dot"></i> Magelang, Jawa
+                                Tengah</span>
+                            <h3>Candi Borobudur</h3>
+                            <p class="card-desc">Candi Borobudur adalah candi Buddha terbesar di dunia yang dibangun
+                                pada abad ke-8. Sebagai salah satu warisan budaya dunia...</p>
+                            <div class="card-footer">
+                                <a href="detail.html?id=1" class="card-btn">Jelajahi <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wisata-card" data-id="2" data-cat="Alam" data-region="Jawa" data-name="Gunung Bromo">
+                        <div class="card-img-wrapper">
+                            <img src="asset/bromo.jpg" alt="Gunung Bromo">
+                            <span class="card-badge">Alam</span>
+                            <button class="card-favorite-btn" onclick="appToggleFavorite(2, event)"
+                                title="Simpan ke Favorit">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-location"><i class="fa-solid fa-location-dot"></i> Probolinggo, Jawa
+                                Timur</span>
+                            <h3>Gunung Bromo</h3>
+                            <p class="card-desc">Gunung Bromo terkenal dengan keindahan kawah aktif, hamparan lautan
+                                pasir luas, serta pemandangan matahari terbit...</p>
+                            <div class="card-footer">
+                                <a href="detail.html?id=2" class="card-btn">Jelajahi <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wisata-card" data-id="3" data-cat="Alam" data-region="Bali" data-name="Nusa Penida">
+                        <div class="card-img-wrapper">
+                            <img src="asset/nusapenida.jpg" alt="Nusa Penida">
+                            <span class="card-badge">Alam</span>
+                            <button class="card-favorite-btn" onclick="appToggleFavorite(3, event)"
+                                title="Simpan ke Favorit">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-location"><i class="fa-solid fa-location-dot"></i> Klungkung, Bali</span>
+                            <h3>Nusa Penida</h3>
+                            <p class="card-desc">Nusa Penida menyajikan pesona tebing laut yang megah dan pantai
+                                berpasir putih bersih seperti Pantai Kelingking...</p>
+                            <div class="card-footer">
+                                <a href="detail.html?id=3" class="card-btn">Jelajahi <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wisata-card" data-id="6" data-cat="Alam" data-region="Bali" data-name="Pulau Komodo">
+                        <div class="card-img-wrapper">
+                            <img src="asset/pulaukomodo.jpg" alt="Pulau Komodo">
+                            <span class="card-badge">Alam</span>
+                            <button class="card-favorite-btn" onclick="appToggleFavorite(6, event)"
+                                title="Simpan ke Favorit">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-location"><i class="fa-solid fa-location-dot"></i> Manggarai Barat,
+                                NTT</span>
+                            <h3>Pulau Komodo</h3>
+                            <p class="card-desc">Pulau Komodo adalah habitat alami dari kadal raksasa purba Komodo yang
+                                dilindungi dunia. Pihak pengelola bersama ranger lokal menjaga ketat kelestarian hutan
+                                sabana...</p>
+                            <div class="card-footer">
+                                <a href="detail.html?id=6" class="card-btn">Jelajahi <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wisata-card" data-id="7" data-cat="Alam" data-region="Papua" data-name="Raja Ampat">
+                        <div class="card-img-wrapper">
+                            <img src="asset/rajaampat.jpeg" alt="Raja Ampat">
+                            <span class="card-badge">Alam</span>
+                            <button class="card-favorite-btn" onclick="appToggleFavorite(7, event)"
+                                title="Simpan ke Favorit">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-location"><i class="fa-solid fa-location-dot"></i> Raja Ampat, Papua Barat
+                                Daya</span>
+                            <h3>Raja Ampat</h3>
+                            <p class="card-desc">Raja Ampat adalah surga penyelaman dunia yang memiliki keanekaragaman
+                                terumbu karang tertinggi, dijaga dengan sistem kearifan lokal masyarakat adat...</p>
+                            <div class="card-footer">
+                                <a href="detail.html?id=7" class="card-btn">Jelajahi <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wisata-card" data-id="9" data-cat="Desa Adat" data-region="NTT"
+                        data-name="Kampung Adat Wae Rebo">
+                        <div class="card-img-wrapper">
+                            <img src="asset/waerebo.jpeg" alt="Kampung Adat Wae Rebo">
+                            <span class="card-badge">Desa Adat</span>
+                            <button class="card-favorite-btn" onclick="appToggleFavorite(9, event)"
+                                title="Simpan ke Favorit">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-location"><i class="fa-solid fa-location-dot"></i> Manggarai, NTT</span>
+                            <h3>Kampung Adat Wae Rebo</h3>
+                            <p class="card-desc">Wae Rebo adalah desa adat tradisional di pegunungan terpencil Flores
+                                yang memiliki 7 rumah adat kerucut Mbaru Niang. Wisatawan diajak berinteraksi langsung
+                                dengan kehidupan warga...</p>
+                            <div class="card-footer">
+                                <a href="detail.html?id=9" class="card-btn">Jelajahi <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-action">
+                    <a href="explore.html" class="btn-large">Lihat Semua Wisata</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-section page-section--alt">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>Tips Wisata Bertanggung Jawab</h2>
+                    <p>Mari menjaga kelestarian alam dan adat istiadat Indonesia selama melakukan perjalanan liburan.
+                    </p>
+                </div>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fa-solid fa-recycle tip-card-icon"></i>
+                        <div>
+                            <h4>Kurangi Sampah Plastik</h4>
+                            <p>Selalu bawa botol minum sendiri dan kantong belanja kain guna meminimalisir pencemaran
+                                sampah di area wisata.</p>
+                        </div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-store tip-card-icon"></i>
+                        <div>
+                            <h4>Dukung Produk &amp; UMKM Lokal</h4>
+                            <p>Belilah cinderamata kerajinan tangan buatan warga setempat dan nikmati sajian kuliner di
+                                warung tradisional sekitar.</p>
+                        </div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-hands-praying tip-card-icon"></i>
+                        <div>
+                            <h4>Hormati Adat Istiadat</h4>
+                            <p>Gunakan pakaian sopan, taati peraturan cagar budaya, serta mintalah izin sebelum memotret
+                                kegiatan upacara adat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-section">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>Cerita dari Destinasi</h2>
+                    <p>Pengalaman nyata para wisatawan yang merasakan keunikan budaya dan alam Indonesia secara
+                        langsung.</p>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <blockquote>&ldquo;Menginap semalam di rumah adat Mbaru Niang Wae Rebo mengubah cara pandang
+                            saya tentang kekayaan budaya. Warga desa begitu ramah dan penuh kearifan, pengalaman yang
+                            tak ternilai harganya.&rdquo;</blockquote>
+                        <div class="testimonial-author">
+                            <div class="avatar-circle">AW</div>
+                            <div>
+                                <h4>Andi Wijaya</h4>
+                                <span>Pengunjung Wae Rebo &mdash; Jakarta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>&ldquo;Snorkeling di Raja Ampat membuat saya sadar betapa terumbu karang kita
+                            sungguh indah dan rapuh. Sekarang saya selalu memilih pemandu lokal dan tidak membuang
+                            sampah di laut.&rdquo;</blockquote>
+                        <div class="testimonial-author">
+                            <div class="avatar-circle">CS</div>
+                            <div>
+                                <h4>Clara Sutedjo</h4>
+                                <span>Penyelam &mdash; Bandung</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>&ldquo;Mengunjungi makam Londa mengingatkan saya untuk menghormati situs sakral
+                            leluhur dengan menjaga tata krama, tidak menyentuh sembarangan, dan memakai pemandu
+                            lokal.&rdquo;</blockquote>
+                        <div class="testimonial-author">
+                            <div class="avatar-circle">RG</div>
+                            <div>
+                                <h4>Roni Gunawan</h4>
+                                <span>Penjelajah Budaya &mdash; Surabaya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-about">
+                <div class="footer-brand">
+                    <i class="fa-solid fa-compass footer-logo-icon"></i>
+                    <span class="footer-brand-name">Jelajah Wisata</span>
+                </div>
+                <p class="footer-tagline">Portal informasi destinasi wisata Nusantara. Dari desa adat, alam bebas,
+                    hingga warisan budaya yang penuh makna.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="explore.html">Daftar Wisata</a></li>
+                    <li><a href="favorites.html">Favorit Saya</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="explore.html">Wisata Alam</a></li>
+                    <li><a href="explore.html">Wisata Budaya</a></li>
+                    <li><a href="explore.html">Desa Adat</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jelajah Wisata. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+
+    <div class="toast-container" id="toast-container"></div>
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
