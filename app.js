@@ -1,9 +1,5 @@
-/* ==========================================================================
-   JELAJAH WISATA - MULTI-PAGE APPLICATION CONTROLLER (TRADITIONAL JS)
-   ========================================================================= */
 
-// --- STATE VARIABLES ---
-var favorites = [1, 3]; // Default favorites
+var favorites = [1, 3];
 try {
     if (localStorage.getItem("wisata_favorites")) {
         favorites = JSON.parse(localStorage.getItem("wisata_favorites"));
@@ -15,7 +11,6 @@ try {
 }
 
 
-// --- PARSE URL QUERY PARAMETERS ON LOAD ---
 function parseQueryParams() {
     var search = window.location.search;
     if (search) {
@@ -38,16 +33,14 @@ function parseQueryParams() {
     }
 }
 
-// --- LINK STATE SYNC HELPER ---
 function getLinkWithState(url) {
     return url;
 }
 
 function updatePageLinks() {
-    // No-op (favorites synced via localStorage)
+
 }
 
-// --- TOAST NOTIFICATIONS ---
 function showToast(message, type) {
     if (!type) type = "success";
     var toastContainer = document.getElementById("toast-container");
@@ -79,11 +72,9 @@ function showToast(message, type) {
     }, 4000);
 }
 
-// --- THEME (removed) ---
 function initTheme() {}
 
 
-// --- MOBILE MENU ---
 var mobileToggleBtn = document.getElementById("mobile-toggle-btn");
 var navMenu = document.getElementById("nav-menu");
 if (mobileToggleBtn && navMenu) {
@@ -94,7 +85,6 @@ if (mobileToggleBtn && navMenu) {
     });
 }
 
-// --- FAVORITES ACTIONS ---
 window.appToggleFavorite = function(id, event) {
     if (event) event.stopPropagation();
     var index = favorites.indexOf(id);
@@ -143,7 +133,7 @@ function updateHeartIcons() {
     }
 }
 
-// --- PAGE SPECIFIC INITIALIZERS ---
+
 function initPage() {
     parseQueryParams();
     initTheme();
@@ -190,15 +180,13 @@ function getQueryParam(name) {
     return null;
 }
 
-// --- HOME PAGE LOGIC ---
+
 function renderHomeFeatured() {
     var featuredGrid = document.getElementById("home-featured-grid");
     if (!featuredGrid) return;
     
-    // Reconstruct the 6 featured cards dynamically
     var cardsHtml = '';
     
-    // Show cards 1, 2, 3, 6, 7, 9
     var ids = [1, 2, 3, 6, 7, 9];
     for (var i = 0; i < ids.length; i++) {
         var card = document.querySelector('.wisata-card[data-id="' + ids[i] + '"]');
@@ -236,7 +224,7 @@ function initRegionCards() {
     }
 }
 
-// --- EXPLORE CATALOG LOGIC ---
+
 var currentCategory = "Semua";
 
 var tabBtns = document.getElementsByClassName("tab-btn");
@@ -324,7 +312,7 @@ function applyCatalogFilters(activeRegion) {
     for (var i = 0; i < cardsArray.length; i++) cardsGrid.appendChild(cardsArray[i]);
 }
 
-// --- FAVORITES PAGE LOGIC ---
+
 function renderFavoritesView() {
     var grid = document.getElementById("favorites-cards-grid");
     if (!grid) return;
@@ -355,7 +343,7 @@ function renderFavoritesView() {
     updatePageLinks();
 }
 
-// --- DETAIL VIEW EVENTS ---
+
 window.changeImage = function(imgId, src, thumb) {
     var mainImg = document.getElementById(imgId);
     if (mainImg) {
@@ -404,7 +392,7 @@ window.calculateLocalBudget = function(detailId) {
     container.querySelector(".label-total-cost").textContent = "Rp " + total.toLocaleString("id-ID");
 };
 
-// --- DETAIL COMMENT RATING STAR ---
+
 var activeRatingVal = 5;
 window.setRatingStar = function(star, val) {
     activeRatingVal = val;
@@ -414,7 +402,7 @@ window.setRatingStar = function(star, val) {
     }
 };
 
-// --- SUBMIT COMMENT ---
+
 window.submitLocalComment = function(id, event) {
     event.preventDefault();
     var container = document.getElementById("detail-" + id);
@@ -442,7 +430,6 @@ window.submitLocalComment = function(id, event) {
     
     list.appendChild(commentItem);
     
-    // Reset inputs
     container.querySelector(".author-name").value = "";
     container.querySelector(".author-msg").value = "";
     var formInputs = container.querySelector(".star-rating-input").getElementsByClassName("fa-star");
@@ -454,5 +441,4 @@ window.submitLocalComment = function(id, event) {
     showToast("Ulasan berhasil diterbitkan!", "success");
 };
 
-// --- INITIALIZE ---
 window.addEventListener("DOMContentLoaded", initPage);

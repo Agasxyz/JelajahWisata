@@ -1,4 +1,4 @@
-Jelajah Wisata
+# Jelajah Wisata
 
 Website ini adalah portal pariwisata berkelanjutan Nusantara yang dirancang dengan HTML, CSS, dan Javascript.
 
